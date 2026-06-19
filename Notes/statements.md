@@ -126,11 +126,15 @@ SELECT team, first_name, last_name FROM people WHERE state_code='CA' AND shirt_o
 ```
 
 ```SQL
-SELECT team, first_name, last_name FROM people WHERE state_code='CA' OR state_code='CO' AND shirt_or_hat='shirt' AND team IS 'Angry Ants';
+SELECT team, first_name, last_name
+FROM people
+WHERE state_code='CA' OR state_code='CO' AND shirt_or_hat='shirt' AND team IS 'Angry Ants';
 ```
 
 ```SQL
-SELECT team, first_name, last_name, shirt_or_hat, state_code FROM people WHERE state_code='CA' OR state_code='CO' AND shirt_or_hat='shirt' AND team IS 'Angry Ants';
+SELECT team, first_name, last_name, shirt_or_hat, state_code
+FROM people
+WHERE state_code='CA' OR state_code='CO' AND shirt_or_hat='shirt' AND team IS 'Angry Ants';
 ```
 
 ```SQL
@@ -168,25 +172,30 @@ SELECT first_name, last_name, state_Code FROM people WHERE first_name LIKE 'b%n'
 ```
 
 ```SQL
-SELECT * FROM people WHERE company LIKE '%LLC';
+SELECT * FROM people
+WHERE company LIKE '%LLC';
 ```
 
 ```SQL
-SELECT * FROM people WHERE company LIKE '%LLC' LIMIT 5;
+SELECT * FROM people
+WHERE company LIKE '%LLC' LIMIT 5;
 ```
 
 ```SQL
-SELECT * FROM people WHERE company LIKE '%LLC' LIMIT 10;
+SELECT * FROM people
+WHERE company LIKE '%LLC' LIMIT 10;
 ```
 
 ```SQL
-SELECT * FROM people WHERE company LIKE '%LLC' LIMIT 10 OFFSET 5;
+SELECT * FROM people
+WHERE company LIKE '%LLC' LIMIT 10 OFFSET 5;
 ```
 
 ## 01_05
 
 ```SQL
-SELECT first_name, last_name FROM people;
+SELECT first_name, last_name
+FROM people;
 ```
 
 ```SQL
